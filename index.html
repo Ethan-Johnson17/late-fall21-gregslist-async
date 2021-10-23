@@ -5,21 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" href="https://bcw.blob.core.windows.net/public/img/9977764104160066">
+  <link rel="icon" href="./assets/img/G.svg">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/style.css">
-  <title>GregsList</title>
+  <title>GregsList | The Online Shop</title>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-dark navbar-expand bg-primary text-light no-select justify-content-between">
-      <a class="navbar-brand ms-3" href="#">
-        <span class="ms-2 f-24">GregsList</span>
-      </a>
+    <nav class="navbar navbar-dark navbar-expand bg-light text-light no-select justify-content-between elevation-1">
+      <div class="navbar-brand ms-3 col-md-1 col-sm-3 col-4">
+        <img class="img-fluid" src="./assets/img/GregsList.svg" alt="">
+      </div>
       <!-- Button trigger modal -->
       <button title='create car' type="button" class="btn btn-success me-3 visually-hidden" data-bs-toggle="modal"
         data-bs-target="#form-modal" id="form-button">
@@ -29,12 +29,12 @@
   </header>
   <main class="container-fluid d-flex flex-column">
     <div class="row flex-grow-1">
-      <div class="col-1 bg-dark text-light pt-5 text-center">
-        <p class="selectable p-2" onclick="app.carsController.showCars()">Cars</p>
-        <p class="selectable p-2">Houses</p>
-        <p class="selectable p-2">Jobs</p>
+      <div class="col-sm-2 bg-success text-light darken-10 pt-5 text-center">
+        <p class="selectable p-2" onclick="app.carsController.showCars()"><b>Cars</b></p>
+        <p class="selectable p-2"><b>Houses</b></p>
+        <p class="selectable p-2"><b>Jobs</b></p>
       </div>
-      <div class="col-11">
+      <div class="col-sm-10">
         <div class="row mt-2" id='listings'>
           <div class="text-center">
             <h2>Welcome To GregsList Please Select A Category</h2>
@@ -71,9 +71,9 @@
       </div>
     </div>
   </div>
-  <footer class="bg-dark text-light">
-    <div class="text-center no-select">
-      <p><small>Made with 💖 by Codeworks</small></p>
+  <footer class="bg-light">
+    <div class="text-center no-select border border-dark">
+      <p><small>Made with 💚 by Codeworks</small></p>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"

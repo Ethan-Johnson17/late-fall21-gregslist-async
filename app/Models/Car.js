@@ -27,7 +27,7 @@ export class Car {
             <p class="m-0"><em>$${this.price}</em></p>
             </div>
             <div class="text-end">
-            <button title="delete car" class='btn btn-danger justify-self-end' onclick="app.carsController.deleteCar('${this.id}')"><i class='mdi mdi-delete'></i></button>
+            <span title="delete car" class='justify-self-end selectable text-danger lighten-20' onclick="app.carsController.deleteCar('${this.id}')"><i class='mdi mdi-delete'></i></span>
             </div>
         </div>
       </div>
