@@ -21,8 +21,8 @@
         <img class="img-fluid" src="./assets/img/GregsList.svg" alt="">
       </div>
       <!-- Button trigger modal -->
-      <button title='create car' type="button" class="btn btn-success me-3 visually-hidden" data-bs-toggle="modal"
-        data-bs-target="#form-modal" id="form-button">
+      <button title='create car' type="button" class="btn btn-success me-3 visually-hidden"
+        onclick="app.carsController.openCreateModal()" id="form-button">
         <i class="mdi mdi-plus"></i>
       </button>
     </nav>
@@ -79,6 +79,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js"></script>
   <script src="app/main.js" type="module"></script>
 </body>
 
