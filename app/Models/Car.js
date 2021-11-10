@@ -18,7 +18,7 @@ export class Car {
     return `
     <div class="col-md-3 mt-3">
       <div class="bg-light elevation-1 rounded">
-        <img width="100%" class="car-img rounded-top" src="${this.imgUrl}" alt="car image">
+        <img width="100%" class="car-img rounded-top" height="300px" src="${this.imgUrl}" alt="car image">
         <div class="p-3">
           <p><b>${this.make} - ${this.model} - ${this.year}</b></p>
           <p>${this.description}</p>

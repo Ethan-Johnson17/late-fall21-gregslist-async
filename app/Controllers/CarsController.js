@@ -2,6 +2,11 @@ import { ProxyState } from "../AppState.js"
 import { getCarForm } from "../Forms/Carform.js"
 import { carsService } from "../Services/CarsService.js"
 
+let carBtn = `<button title='create car' type="button" class="btn btn-success me-3"
+          onclick="app.carsController.openCreateModal()" id="form-button">
+          <i class="mdi mdi-plus"></i>
+        </button>`
+
 function _drawCars() {
   const cars = ProxyState.cars
   let template = ''
@@ -9,6 +14,7 @@ function _drawCars() {
   cars.forEach(car => template += car.Template)
   // add to page
   document.getElementById('listings').innerHTML = template
+  document.getElementById('plusBtn').innerHTML = carBtn
 }
 
 
@@ -41,7 +47,7 @@ export class CarsController {
         description: formElem.description.value,
         imgUrl: formElem.imgUrl.value
       }
-      if (id) {
+      if (id !== 'undefined') {
         await carsService.editCar(carData, id)
       } else {
         await carsService.createCar(carData)
